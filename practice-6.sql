@@ -16,3 +16,14 @@
 -- | Burnside               | 10       |
 
 
+
+```
+SELECT neighborhood, count(reviews)
+From listings
+group by neighborhood
+Order by neighborhood asc;
+
+SELECT id
+From reviews
+order by count(id);
+

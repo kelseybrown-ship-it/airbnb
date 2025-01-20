@@ -11,5 +11,8 @@
 -- | Avondale               |
 -- | Belmont Cragin         |
 -- | Beverly                |
-
+SELECT neighborhood
+FROM listings
+group by neighborhood
+order by neighborhood asc;
 

@@ -17,13 +17,8 @@
 
 
 
-```
-SELECT neighborhood, count(reviews)
-From listings
+
+SELECT listings.neighborhood, COUNT (*)
+FROM reviews INNER JOIN listings ON listings.id = reviews.listing_id
 group by neighborhood
 Order by neighborhood asc;
-
-SELECT id
-From reviews
-order by count(id);
-
